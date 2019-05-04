@@ -1,0 +1,123 @@
+{"movies" : [
+  {
+    "title": "La La Land",
+    "poster": "https://i.imgur.com/po7UezG.jpg",
+    "genre": "Drama/Romance",
+    "releaseDate": "2018"
+
+
+  },
+  {
+    "title": "Paterson",
+    "poster": "https://i.imgur.com/pE0C9E0.jpg",
+    "genre": "Drama/Comedy",
+    "releaseDate": "2012"
+
+
+  },
+  {
+    "title": "Jackie",
+    "poster": "https://i.imgur.com/VqUi1sw.jpg",
+    "genre": "Drama/Biography",
+    "releaseDate": "2017"
+
+
+  },
+  {
+    "title": "Lo and Behold Reveries of the Connected World",
+    "poster": "https://i.imgur.com/s106X7S.jpg",
+    "genre": "Documentary",
+    "releaseDate": "2005"
+
+
+  },
+  {
+    "title": "10 Cloverfield Lane",
+    "poster": "https://i.imgur.com/kV2BVdH.jpg",
+    "genre": "Drama",
+    "releaseDate": "2018"
+
+
+  },
+  {
+    "title": "Birth of a Nation",
+    "poster": "https://i.imgur.com/a6HJj8S.jpg",
+    "genre": "Fantasy/Myster",
+    "releaseDate": "2001"
+
+
+  },
+  {
+    "title": "De Palma",
+    "poster": "https://i.imgur.com/oOIa73M.jpg",
+    "genre": "Documentary",
+    "releaseDate": "1994"
+
+
+  },
+  {
+    "title": "Doctor Strange",
+    "poster": "https://i.imgur.com/kyHDVOk.jpg",
+    "genre": "Fantasy/Science Fiction",
+    "releaseDate": "2016"
+
+
+  },
+  {
+    "title": "Eddie the Eagle",
+    "poster": "https://i.imgur.com/GNrdAuF.jpg",
+    "genre": "Drama/Sport",
+    "releaseDate": "2011"
+
+
+  },
+  {
+    "title": "Pride and prejudice and zombies",
+    "poster": "https://i.imgur.com/KhbG0Lw.jpg",
+    "genre": "Thriller/Action",
+    "releaseDate": "2012"
+
+
+  },
+  {
+    "title": "Finding Dory",
+    "poster": "https://i.imgur.com/BTexHYJ.jpg",
+    "genre": "Comedy/Adventure",
+    "releaseDate": "2004"
+
+
+  },
+  {
+    "title": "Green Room",
+    "poster": "https://i.imgur.com/Q0Ysh7L.jpg",
+    "genre": "Crime/Thriller",
+    "releaseDate": "2008"
+
+
+  },
+  {
+    "title": "Kubo and the Two Strings",
+    "poster": "https://i.imgur.com/uTFCKZc.jpg",
+    "genre": "Fantasy/Adventure",
+    "releaseDate": "2015"
+
+
+  },
+  {
+    "title": "In a Valley of Violence",
+    "poster": "https://i.imgur.com/DTtJ62G.jpg",
+    "genre": "Drama/Western",
+    "releaseDate": "2020"
+
+
+  },
+  {
+    "title": "O.J.: Made in America",
+    "poster": "https://i.imgur.com/T8uc6x8.jpg",
+    "genre": "Documentary",
+    "releaseDate": "2019"
+
+
+  }
+]
+}

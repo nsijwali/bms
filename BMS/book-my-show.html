@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Book My Show</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="assets\img\bms.png">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="bms-functionlity.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div>
+      <button onclick="topFunction()" id="myBtn" title="Go to top"> >> </button>
+      <input type="button" class="lib-btn" value="My Movie Library"></input>
+      <input type="text" id="myInput" class="search-box"></input>
+      <button class="open-button" onclick="openForm()">+</button>
+
+      <div class="form-popup" id="myForm">
+        <form  class="form-container">
+          <h1>Login</h1>
+
+          <label for="title"><b>Movie Name</b></label>
+          <input type="text" onchange="addmovie(event)" placeholder="Movie Name" id="title" name="title" required>
+
+          <label for="date"><b>Release Date</b></label>
+          <input type="text" onchange="addmovie(event)" placeholder="Release Date" id="date" name="date" required>
+
+          <label for="poster"><b>Movie Poster</b></label>
+          <input type='file' id="poster"onchange="addmovie(event)" name="poster"/>
+
+          <button type="button" class="btn" onclick="add()">Add</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+      </div>
+      <div id="movie_img" ></div>
+    </div>
+  </div>
+
+  <p class="para">PRIVACY POLICY | TERMS & CONDITION </p>
+  <p class="copy">2019 &copy All Rights Reserved</p>
+  <p class="floatRightSocial">Follow us on social </p>
+  <ul class="social-icons">
+    <li><a href="http://www.facebook.com" class="fb"><img width src='assets\img\fb.png' /></a></li>
+    <li><a href="http://www.twitter.com"><img src='assets\img\tweet.jpg' /></a></li>
+    <li><a href="http://www.youtube.com"><img src='assets\img\insta.jpg' /></a></li>
+  </ul>
+</body>
+
+</html>
