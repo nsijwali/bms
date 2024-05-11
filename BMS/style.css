@@ -1,15 +1,21 @@
-
 body {
     padding: 10px;
     background-color: #e3e2dd;
 }
 
-#movie_img{
-padding-bottom: 25px;
+.wrapper {
+    padding-block: 1rem;
+}
+
+#movie_img {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
 }
 
 .movie {
-    width: 16%;
+    width: auto;
     height: 250px;
     display: inline-block;
     padding: 25px;
@@ -21,7 +27,12 @@ padding-bottom: 25px;
 }
 
 .movie:hover {
-    opacity: 0.5;
+    opacity: 0.8;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
 }
 
 .movie-del {
@@ -31,14 +42,13 @@ padding-bottom: 25px;
     border: 1px;
     color: white;
 }
+
 .movie:hover .movie-del {
-    display: inline;
+    display: block;
+    position: absolute;
     border-radius: 50%;
-    position: relative;
-    bottom: 12em;
     width: 5em;
     height: 5em;
-    left: 50px;
     opacity: 1;
     background-color: #337ab7;
     outline: none;
@@ -48,7 +58,7 @@ padding-bottom: 25px;
     -o-border-radius: 50%;
 }
 
-.lib-btn{
+.lib-btn {
     border-radius: 14px;
     bottom: 10em;
     width: 15em;
@@ -67,22 +77,26 @@ padding-bottom: 25px;
 
 .social-icons {
     text-align: right;
-    margin-top: -10px
-    }
-    .social-icons li {
-    display:inline-block;
-    list-style-type:none;
-    -webkit-user-select:none;
-    -moz-user-select:none;
-    }
-    .social-icons li a {
+    margin-top: -10px;
+}
+
+.social-icons li {
+    display: inline-block;
+    list-style-type: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+.social-icons li a {
     border-bottom: none;
-    }
-    .social-icons li img {
-    width:30px;
-    height:30px;
+}
+
+.social-icons li img {
+    width: 30px;
+    height: 30px;
     margin-right: 10px;
-    }
+}
+
 #container {
     background-color: white;
     border-radius: 5px;
@@ -91,7 +105,6 @@ padding-bottom: 25px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
 }
-
 
 .search-box {
     width: 1%;
@@ -109,7 +122,7 @@ padding-bottom: 25px;
     -o-border-radius: 50%;
 }
 
-.search-box:hover{
+.search-box:hover {
     width: 50%;
     background-position: left;
     border-radius: 25px;
@@ -138,21 +151,21 @@ padding-bottom: 25px;
     text-align: right;
     font-family: 'Courier New', Courier, monospace;
     font-size: 12px;
-
 }
 
-.para{
+.para {
     display: inline;
     font-family: 'Courier New', Courier, monospace;
 }
-.copy{
+
+.copy {
     font-family: 'Courier New', Courier, monospace;
     font-size: 12px;
     position: absolute;
     margin: auto;
 }
 
-.floatRightSocial{
+.floatRightSocial {
     text-align: right;
     font-family: 'Courier New', Courier, monospace;
     font-size: 12px;
@@ -162,14 +175,13 @@ padding-bottom: 25px;
     display: inline-block;
 }
 
-ul li img{
+ul li img {
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
 }
-
 
 #myBtn {
     display: none;
@@ -192,75 +204,91 @@ ul li img{
     -o-transform: rotate(-90deg);
 }
 
-    #myBtn:hover {
+#myBtn:hover {
     background-color: #555;
-    }
+}
 
-    .open-button {
-        background-color: #337ab7;
-        color: white;
-        margin-top: 10px;
-        padding: 5px 12px;
-        border: none;
-        cursor: pointer;
-        opacity: 0.8;
-        position: absolute;
-        right: 8%;
-        font-size: 20px;
-        border-radius: 50%;
+.open-button {
+    background-color: #337ab7;
+    color: white;
+    margin-top: 10px;
+    padding: 5px 12px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: absolute;
+    right: 8%;
+    font-size: 20px;
+    border-radius: 50%;
+}
 
-        }
 
-        /* The popup form - hidden by default */
-        .form-popup {
-        display: none;
-        position: fixed;
-        bottom: 0;
-        right: 15px;
-        border: 3px solid #f1f1f1;
-        z-index: 9;
-        }
+/* The popup form - hidden by default */
 
-        /* Add styles to the form container */
-        .form-container {
-        max-width: 300px;
-        padding: 15px;
-        background-color: white;
-        }
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
 
-        /* Full-width input fields */
-        .form-container input[type=text], .form-container input[type=password] {
-        width: 90%;
-        padding: 15px;
-        margin: 5px 0 22px 0;
-        border: none;
-        background: #f1f1f1;
-        }
 
-        /* When the inputs get focus, do something */
-        .form-container input[type=text]:focus, .form-container input[type=password]:focus {
-        background-color: #ddd;
-        outline: none;
-        }
+/* Add styles to the form container */
 
-        /* Set a style for the submit/login button */
-        .form-container .btn {
-        background-color: #4CAF50;
-        color: white;
-        padding: 16px 20px;
-        border: none;
-        cursor: pointer;
-        width: 100%;
-        margin-bottom:10px;
-        opacity: 0.8;
-        }
+.form-container {
+    max-width: 300px;
+    padding: 15px;
+    background-color: white;
+}
 
-        /* Add a red background color to the cancel button */
-        .form-container .cancel {
-        background-color: red;
-        }
 
-        /* Add some hover effects to buttons */
-        .form-container .btn:hover, .open-button:hover {
-        opacity: 1;
-        }
+/* Full-width input fields */
+
+.form-container input[type='text'],
+.form-container input[type='password'] {
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+
+/* When the inputs get focus, do something */
+
+.form-container input[type='text']:focus,
+.form-container input[type='password']:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+
+/* Set a style for the submit/login button */
+
+.form-container .btn {
+    background-color: #4caf50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+
+/* Add a red background color to the cancel button */
+
+.form-container .cancel {
+    background-color: red;
+}
+
+
+/* Add some hover effects to buttons */
+
+.form-container .btn:hover,
+.open-button:hover {
+    opacity: 1;
+}
